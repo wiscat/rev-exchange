@@ -1,0 +1,89 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "spaced-comment": 0,
+    "indent": 0,
+    "id-length": [
+      2,
+      {
+        "min": 2,
+        "properties": "never",
+        "exceptions": [
+          "t",
+          "$",
+          "e",
+          "_",
+          "i"
+        ]
+      }
+    ],
+    "max-len": [
+      2,
+      180,
+      4
+    ],
+    "no-undef": 0,
+    "no-unused-vars": 1,
+    "func-names": 0,
+    "no-new": 0,
+    "comma-dangle": 0,
+    "flowtype/space-after-type-colon": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-first-prop-new-line": 0,
+    "react/jsx-indent-props": 0,
+    "react/self-closing-comp": 0,
+    "react/jsx-boolean-value": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "react/require-default-props": 0,
+    "no-lonely-if": 0,
+    "object-curly-newline": 0,
+    "react/sort-comp": [
+      2,
+      {
+        "order": [
+          "type-annotations",
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "render"
+        ],
+        "groups": {
+          "lifecycle": [
+            "displayName",
+            "propTypes",
+            "contextTypes",
+            "childContextTypes",
+            "mixins",
+            "statics",
+            "defaultProps",
+            "state",
+            "constructor",
+            "getDefaultProps",
+            "getInitialState",
+            "getChildContext",
+            "shouldComponentUpdate",
+            "componentWillMount",
+            "componentDidMount",
+            "componentWillReceiveProps",
+            "componentWillUpdate",
+            "componentDidUpdate",
+            "componentWillUnmount"
+          ]
+        }
+      }
+    ]
+  },
+  "plugins": [
+    "flowtype"
+  ]
+}
