@@ -1,6 +1,6 @@
 {
   "name": "rev-exchange",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "RevExchange React component",
   "main": "lib/index.js",
   "module": "es/index.js",
