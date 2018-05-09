@@ -1,8 +1,16 @@
 /* @flow */
+import { CALL_API } from '../redux/api';
 
 import type { State } from '../redux/store';
 
-export type { Store, Dispatch, Action } from 'redux';
+export type ApiAction = {
+  [typeof CALL_API]: {
+    types: [string, string, string],
+    endpoint: string,
+  }
+}
+export type Action = { +type: string } | ApiAction;
+export type { Store, Dispatch } from 'redux';
 export type { State };
 export type Wallet = { [key: string]: number };
 export type Rates = { [key: string]: number };

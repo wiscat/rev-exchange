@@ -1,10 +1,10 @@
 /* @flow */
 
-import type { Store, Dispatch, Action } from '../types';
+import type { Store, Dispatch, ApiAction } from '../types';
 
 export const CALL_API = 'Call API';
 
-export default (store: Store) => (next: Dispatch) => (action: Action): Promise<any> => {
+export default (store: Store) => (next: Dispatch) => (action: ApiAction): Promise<any> => {
   const callAPI = action[CALL_API];
   if (typeof callAPI === 'undefined') {
     return next(action);

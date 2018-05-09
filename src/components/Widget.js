@@ -12,7 +12,7 @@ type WidgetProps = {
   styles?: boolean,
   width?: number,
   height?: number,
-  baseFontSize?: number,
+  baseFontSize: number,
   colorStart?: string,
   colorStop?: string,
   syncInterval?: number,
